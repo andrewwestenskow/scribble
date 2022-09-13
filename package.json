@@ -1,0 +1,30 @@
+{
+  "name": "scribble",
+  "version": "0.0.1",
+  "description": "Scrobble",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx tsc && tsc-alias",
+    "start": "nodemon ./dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/koa": "^2.13.5",
+    "@types/koa__router": "^12.0.0",
+    "nodemon": "^2.0.19",
+    "tsc-alias": "^1.7.0",
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "@koa/router": "^12.0.0",
+    "dotenv": "^16.0.2",
+    "koa": "^2.13.4"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "src"
+    ]
+  }
+}
