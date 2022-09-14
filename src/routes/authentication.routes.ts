@@ -1,6 +1,6 @@
 import Router from "@koa/router"
 
-export const authenticationRouter = new Router({prefix: "/auth"})
+export const authenticationRouter = new Router({prefix: "/api/auth"})
 
 authenticationRouter.get("/key", ctx => {
     ctx.body = process.env.LAST_FM_API_KEY
