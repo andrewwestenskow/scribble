@@ -1,15 +1,15 @@
 <script lang="ts">
-  import Counter from './lib/Counter.svelte'
-  import {Router, Route} from 'svelte-routing'
+  import Router from './core/router.svelte'
 </script>
 
-<main>
-  <h1>A'int this some crap</h1>
-  <Router>
-    <Route path="counter"><Counter/></Route>
-  </Router>
+<main id="main">
+  <Router/>
 </main>
 
 <style>
-
+  #main{
+    background-color: darkcyan;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
 </style>
